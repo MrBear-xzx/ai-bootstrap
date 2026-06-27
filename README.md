@@ -57,22 +57,26 @@ ai-bootstrap/
     ├── claude code/
     │   ├── global/
     │   │   └── CLAUDE.md    ← 全局配置模板（→ ~/.claude/CLAUDE.md）
-    │   └── project/
-    │       └── CLAUDE.md    ← 项目配置模板（→ <project>/CLAUDE.md）
+    │   ├── project/
+    │   │   └── CLAUDE.md    ← 项目配置模板（→ <project>/CLAUDE.md）
+    │   └── plugins.md       ← Claude Code 推荐插件及配置说明
     │
     └── codex/
         ├── global/
         │   └── AGENTS.md    ← 全局配置模板（→ ~/.codex/AGENTS.md）
-        └── project/
-            └── AGENTS.md    ← 项目配置模板（→ <project>/AGENTS.md）
+        ├── project/
+        │   └── AGENTS.md    ← 项目配置模板（→ <project>/AGENTS.md）
+        └── plugins.md       ← Codex 推荐插件及配置说明
 ```
 
 | 目录 | 用途 |
 |------|------|
 | `agents/claude code/global/` | Claude Code 全局配置母版，存放个人通用工作约定 |
 | `agents/claude code/project/` | Claude Code 项目配置母版，存放具体项目的开发规范 |
+| `agents/claude code/plugins.md` | Claude Code 推荐插件列表、安装命令及配置说明 |
 | `agents/codex/global/` | Codex 全局配置母版，内容与 Claude Code 一致，路径适配 |
 | `agents/codex/project/` | Codex 项目配置母版，结构与 Claude Code 项目模板相同 |
+| `agents/codex/plugins.md` | Codex 推荐插件列表、安装说明及使用建议 |
 
 ---
 
@@ -138,4 +142,7 @@ Claude Code 和 Codex 都支持两层配置，职责不同：
 
 ## 配套工具
 
-推荐插件及安装说明见 [docs/plugins.md](docs/plugins.md)。
+每个工具的推荐插件、安装命令和配置说明存放在各自的插件文档中：
+
+- [Claude Code 推荐插件](agents/claude%20code/plugins.md)
+- [Codex 推荐插件](agents/codex/plugins.md)
