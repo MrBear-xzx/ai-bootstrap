@@ -116,6 +116,11 @@
   - 建议的提交信息
 
 - 提交信息遵循仓库现有规范；仓库没有规范时，使用简洁的 Conventional Commits 风格，描述默认使用中文
+- 禁止在任何输出内容中添加 Claude/AI 署名或贡献声明，包括但不限于：
+  - commit message、PR 标题、PR 正文
+  - 代码注释、文档、changelog、配置文件
+  - 所有其他生成或编辑的文件
+  - 禁止形式包括 `Co-Authored-By: Claude`、`🤖 Generated with [Claude Code]`、以及任何提及 Claude、Anthropic、AI 辅助、AI 生成等字样的标注
 - CI 未通过时不得建议合并，除非明确说明失败原因并获得我的授权
 - 默认使用 Squash merge；需要 Rebase merge 或 Merge commit 时先说明原因
 - 未经明确允许，不要使用 `--no-verify` 绕过 Git Hooks
